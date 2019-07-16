@@ -1,0 +1,26 @@
+{
+  "name": "formatted-messages",
+  "version": "1.0.0",
+  "description": "A package for formatting messages in node packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuatvernon/formatted-messages.git"
+  },
+  "keywords": [
+    "message",
+    "messages",
+    "format",
+    "formatted",
+    "formatting"
+  ],
+  "author": "Joshua Vernon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshuatvernon/formatted-messages/issues"
+  },
+  "homepage": "https://github.com/joshuatvernon/formatted-messages#readme"
+}
