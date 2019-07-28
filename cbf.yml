@@ -1,0 +1,33 @@
+---
+dev:
+  options:
+    install:
+      command: "npm install"
+    build:
+      command: "npm run build"
+    clean:
+      command: "npm run clean"
+    lint:
+      command: "npm run lint"
+    test:
+      command: "npm run test"
+    npm:
+      options:
+        version:
+          options:
+            patch:
+              command: "npm version patch -m '%s: release-title'"
+              variables:
+                release-title: "What's the release title?"
+            minor:
+              command: "npm version minor -m '%s: release-title'"
+              variables:
+                release-title: "What's the release title?"
+            major:
+              command: "npm version major -m '%s: release-title'"
+              variables:
+                release-title: "What's the release title?"
+        publish:
+          command: "npm publish"
+    update-changelog:
+      command: "git fetch --tags && git-chglog -o CHANGELOG.md"
