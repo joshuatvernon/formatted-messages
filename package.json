@@ -1,6 +1,6 @@
 {
   "name": "formatted-messages",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package for formatting messages in node packages",
   "main": "index.js",
   "scripts": {
