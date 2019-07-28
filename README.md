@@ -1,5 +1,7 @@
 # Formatted Messages
 
+[![npm version](https://badge.fury.io/js/formatted-messages.svg)](https://badge.fury.io/js/formatted-messages) [![Build Status](https://travis-ci.com/joshuatvernon/formatted-messages.svg?branch=master)](https://travis-ci.com/joshuatvernon/formatted-messages) [![vulnerabilities](https://snyk.io/test/github/joshuatvernon/formatted-messages/badge.svg)](https://snyk.io/test/github/joshuatvernon/formatted-messages)
+
 `formatted-messages` is just a smaller (non intl) copy of the `react-intl` API made for Node packages. Reference [chalk](https://www.npmjs.com/package/chalk) to see what colours `formatted-messages` supports.
 
 ## API
