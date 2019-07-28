@@ -1,6 +1,6 @@
 {
   "name": "formatted-messages",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A package for formatting messages in node packages",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "build-annotated-tag": "echo \"$(npm run --silent latest-tag-annotated)\n\n$(npm run --silent changes-since-latest-tag)\"",
     "update-latest-tag": "git tag -f \"$(npm run --silent latest-tag)\" \"$(npm run --silent latest-tag)\"^{} -a -m \"$(npm run --silent build-annotated-tag)\"",
     "version": "genversion --semi version.js && git add version.js",
-    "postversion": "npm run --silent update-latest-tag && git push && git push --follow-tags",
+    "postversion": "npm run --silent update-latest-tag && git push -u origin $(git rev-parse --abbrev-ref HEAD) && git push --follow-tags",
     "current-version": "echo $npm_package_version",
     "latest-published-version": "npm view formatted-messages version"
   },
